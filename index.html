@@ -6,8 +6,17 @@
   <title>Uko John's Portfolio</title>
   <link rel="stylesheet" href="styles.css" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 <body>
+    <div class="theme-toggle">
+        <button onclick="toggleTheme()">🌙 / ☀️</button>
+    </div>
+    
+    <div id="loader-wrapper">
+        <div class="loader">Loading...</div>
+    </div>
   <aside class="sidebar">
     <img src="profile_picture.jpeg" alt="Uko John Profile Photo" class="profile-img">
     <h1>Uko John</h1>
@@ -25,13 +34,13 @@
   </aside>
 
   <main class="uncentered">
-    <h1>PORTFOLIO</h1>
-    <section id="about">
+    <h1>My Portfolio</h1>
+    <section id="about" data-aos="fade-up">
       <h2>About Me</h2>
       <p>Customer Support and Account Management professional with over 3 years of experience in the fintech space. I’m passionate about technology and an aspiring full stack developer with skills in JavaScript, Python, MySQL and Node.js. I solve problems, build relationships, and deliver results.</p>
     </section>
 
-    <section id="programming languages">
+    <section id="programming languages" data-aos="fade-right">
       <h2>Programming Languages</h2>
       <ul>
         <li>JavaScript</li>
@@ -41,7 +50,7 @@
       </ul>
     </section>
 
-    <section id="skills">
+    <section id="skills" data-aos="fade-up">
         <h2>Skills</h2>
         <ul>
           <li>Prompt engineering</li>
@@ -50,14 +59,14 @@
         </ul>
       </section>
 
-    <section id="education">
+    <section id="education" data-aos="fade-left">
       <h2>Educational Background</h2>
       <p><strong>B.Sc. in Pure and Applied Zoology</strong></p>
       <p>Federal University of Agriculture, Abeokuta (Graduated: December 2023)</p>
-      <a href="https://drive.google.com/file/d/1F5eq91gHQJeiUeEg-DXfcj8uXI8sGI-Y/view?usp=drive_link" download>Download CV</a>
+      <a href="https://drive.google.com/file/d/1F5eq91gHQJeiUeEg-DXfcj8uXI8sGI-Y/view?usp=drive_link" download class="download-btn">⬇ Download CV</a>
     </section>
 
-    <section id="projects">
+    <section id="projects" data-aos="fade-up">
       <h2>Projects</h2>
       <div>
         <h3>Portfolio Design</h3>
@@ -66,7 +75,7 @@
       </div>
     </section>
 
-    <section id="interests">
+    <section id="interests" data-aos="fade-right">
       <h2>Interests</h2>
       <ul>
         <li>Web development: Web development enthusiast and an aspiring full stack (MERN) developer</li>
@@ -75,7 +84,7 @@
       </ul>
     </section>
 
-    <section id="contact">
+    <section id="contact" data-aos="fade-up">
       <h2>Contact Me</h2>
       <p>Email: <a href="mailto:ukojohn.j@gmail.com">ukojohn.j@gmail.com</a></p>
       <p>Phone: +234 9152581087</p>
@@ -99,5 +108,20 @@
       <p>&copy; 2025 Uko John. All rights reserved.</p>
     </footer>
   </main>
+  <script>
+    // AOS Animation
+    AOS.init();
+
+    // Theme Toggle
+    function toggleTheme() {
+      document.body.classList.toggle('light-theme');
+    }
+
+    // Page Loader
+    window.addEventListener('load', function () {
+      const loader = document.getElementById('loader-wrapper');
+      loader.style.display = 'none';
+    });
+  </script>
 </body>
 </html>
