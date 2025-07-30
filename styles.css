@@ -25,14 +25,15 @@
   .sidebar {
     width: 260px;
     min-height: 100vh;
-    background-color: #121212;
-    padding: 2rem 1rem;
+    background-color: #0a0a0a;
+    padding: 1rem 2rem;
+    /*padding-bottom: 10px;*/
     position: fixed;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    border-right: 0.5px solid #a5edf5;
+    border-right: 0.5px solid #00e5ff;
   }
   
   .sidebar h1 {
@@ -43,8 +44,8 @@
   }
   
   .profile-img {
-    width: 120px;
-    height: 120px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     object-fit: cover;
     margin-bottom: 1rem;
@@ -82,7 +83,6 @@
     margin-left: 260px;
     padding: 3rem;
     flex: 1;
-    background: url('background_picture.jpg') center/cover no-repeat;
     position: relative;
     z-index: 1;
   }
