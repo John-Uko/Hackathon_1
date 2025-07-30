@@ -1,11 +1,11 @@
 /* NEW: Layout flex wrapper */
 .layout-wrapper {
-    display: flex;
-    flex-direction: row;
+    display: flexbox;
+    flex-direction: column;
     min-height: 100vh;
     width: 100%;
   }
-  
+
 /* Reset and base styles */
 * {
     margin: 0;
@@ -39,6 +39,7 @@
     margin-top: 1rem;
     font-size: 1.9rem;
     color: #00e5ff;
+    position: relative;
   }
   
   .profile-img {
@@ -48,6 +49,7 @@
     object-fit: cover;
     margin-bottom: 1rem;
     border: 2px solid #00e5ff;
+    position: relative;
   }
   
   .sidebar nav ul {
